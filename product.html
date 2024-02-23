@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h2>Product Table</h2>
+    <button id="toggleButton" class="btn btn-primary">Show/Hide Products</button>
+    <table id="productTable" class="table table-striped" style="display: none;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Brand</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody">
+            <!-- Table body will be dynamically populated with data from XML -->
+        </tbody>
+    </table>
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Load XML data and populate table -->
+<script>
+    $(document).ready(function(){
+        $("#toggleButton").click(function(){
+            $("#productTable").toggle();
+        });
+        
+        $.ajax({
+            type: "GET",
+            url: "products.xml",
+            dataType: "xml",
+            success: function(xml){
+                $(xml).find('product').each(function(){
+                    var id = $(this).find('id').text();
+                    var brand = $(this).find('brand').text();
+                    var name = $(this).find('name').text();
+                    var price = $(this).find('price').text();
+                    $('#productTableBody').append('<tr><td>'+id+'</td><td>'+brand+'</td><td>'+name+'</td><td>'+price+'</td></tr>');
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

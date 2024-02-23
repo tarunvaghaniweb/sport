@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product>
+        <id>1</id>
+        <brand>Nike</brand>
+        <name>Basketball</name>
+        <price>300 Rs.</price>
+    </product>
+    <product>
+        <id>2</id>
+        <brand>Adidas</brand>
+        <name>Soccer Ball</name>
+        <price>200 Rs.</price>
+    </product>
+    <product>
+        <id>3</id>
+        <brand>Wilson</brand>
+        <name>Tennis Racket</name>
+        <price>700 Rs.</price>
+    </product>
+    <!-- Additional products -->
+    <product>
+        <id>4</id>
+        <brand>Under Armour</brand>
+        <name>Basketball Shoes</name>
+        <price>300 Rs.</price>
+    </product>
+    <product>
+        <id>5</id>
+        <brand>Puma</brand>
+        <name>Football Cleats</name>
+        <price>150 Rs.</price>
+    </product>
+    <product>
+        <id>6</id>
+        <brand>Wilson</brand>
+        <name>Badminton Shuttlecock</name>
+        <price>450 Rs.</price>
+    </product>
+    <product>
+        <id>7</id>
+        <brand>Nike</brand>
+        <name>Golf Club Set</name>
+        <price>1200 Rs.</price>
+    </product>
+    <product>
+        <id>8</id>
+        <brand>Adidas</brand>
+        <name>Volleyball</name>
+        <price>800 Rs.</price>
+    </product>
+    <product>
+        <id>9</id>
+        <brand>Yonex</brand>
+        <name>Badminton Racket</name>
+        <price>1000 Rs.</price>
+    </product>
+    <product>
+        <id>10</id>
+        <brand>Spalding</brand>
+        <name>American Football</name>
+        <price>1300 Rs.</price>
+    </product>
+    <product>
+        <id>11</id>
+        <brand>Wilson</brand>
+        <name>Table Tennis Paddle</name>
+        <price>600 Rs.</price>
+    </product>
+    <product>
+        <id>12</id>
+        <brand>Nike</brand>
+        <name>Running Shoes</name>
+        <price>1700 Rs.</price>
+    </product>
+</products>

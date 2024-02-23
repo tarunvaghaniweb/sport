@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About us</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./logo/logo1.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width:850px){ 
+    .rows{
+        display:block;
+    }
+    .cols-5{
+        width:100%;
+    }
+    .cols-2{
+        width: 100%;
+    }
+    .rowcont{
+        display: block;
+        flex-direction: column;
+    }
+}
+
+/* About Us page */
+.dis-flex{
+    display: flex;
+}
+
+
+/* -------------------Media queries ---------------------*/
+@media (max-width:1200px) and (min-width:850px) {
+    main{
+        padding: 0;
+    }
+    .heading-name{
+        font-size: 400%;
+    }
+    .imgdiv{
+        position: relative;
+    }
+    .p_infodiv{
+        position: relative;
+    }
+    .subdiv{
+        display: block;
+        height: fit-content;
+    }
+}
+    </style>
+</head>
+<body>
+	<header class="sticky-top">
+        <div class="navbar1">
+            <div class=" logo1 border1">
+                <img src="./logo/logo1.png" alt="">
+            </div>
+            <div class="nav-search1">
+                <select class="search1">
+                    <option value="all">All</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="riding">Riding</option>
+                </select>
+                <input placeholder="Search items" class="search2">
+                <div class="search3"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="sign-nav1 border1">
+                <a href="login1.html" class="nav2" target="_blank">
+                    Login
+                </a>
+            </div>
+            <div class="nav-return1 border1">
+                <p class="nav2">
+                    Returns & Orders
+                </p>
+            </div>
+            <div class="nav-cart1 border1">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="" class="navbar-brand">
+                <span><img src="j1.jpg" alt=""></span>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="service.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product1.html" class="nav-link"> Cricket Products</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+	<main class="bg-secondary bg-white">
+		<div class="container mt-1">
+			<center>
+				<img src="./logo/logo1.png" alt="Logo" width="12%" height="12%" class="img-thumbnail mt-3 img-fluid">
+				<h1>The D-cube sports club</h1>
+			</center>
+			<div class=" m-1 p-2">
+				<h3 class="p-2 m-1 aboutUsh1" style="text-align: center;">  Who We Are?</h3>
+				<b class="p-2 m-1">
+					<p class="aboutUsPara" style="padding-left: 40px; padding-right: 40px;">The D-cube sports club is guided by four principles: customer obsession rather than competitor focus,
+						passion for invention, commitment to operational excellence, and long-term thinking. The
+						Bhartiya Cart strives to be Earth’s most customer-centric company, Earth’s best employer, and
+						Earth’s safest place to work. Customer reviews, 1-Click shopping, personalized recommendations,
+						Prime, Fulfillment by The sports club, AWS, Kindle Direct Publishing, Kindle, Career Choice,
+						Fire tablets, Fire TV, The Bhartiya Cart Echo, Alexa, Just Walk Out technology, The Bhartiya
+						Cart Studios, and The Climate Pledge are some of the things pioneered by The Bhartiya Cart.</p>
+				</b>
+			</div>
+            <br>
+			<div class="flex  justify-content-between ">
+				<div class="bg-dark border border-white m-2 p-3">
+					<h3 class="color-gold aboutUsh3" style="padding-left: 40px; padding-right: 40px;">Leardership Principles :</h3>
+					<b>
+						<p class="color-white aboutUsPara" style="padding-left: 40px; padding-right: 40px;">Our Leadership Principles are more than inspirational wall hangings. The
+							16 principles guide our discussions and decisions every day</p>
+					</b>
+				
+				</div>
+                <br>
+				<div class="bg-dark border border-white m-2 p-3">
+					<h3 class="color-gold aboutUsh3" style="padding-left: 40px; padding-right: 40px;">Awards and Recognition :</h3>
+					<b>
+						<p class="color-white aboutUsPara" style="padding-left: 40px; padding-right: 40px;">We are honoured to be recognised for the work we do on behalf of our
+							customers, employees, and communities every day.</p>
+					</b>
+					
+				</div>
+                <br>
+				<div class="bg-dark border border-white m-2 p-3">
+					<h3 class="color-gold aboutUsh3" style="padding-left: 40px; padding-right: 40px;">Facts About Us :</h3>
+					<b>
+						<p class="color-white aboutUsPara" style="padding-left: 40px; padding-right: 40px;">Facts about The Bhartiya Cart, its employees, communities, and customers.
+						</p>
+					</b>
+					
+				</div>
+                <br>
+			</div>
+            <center>
+			    <img src="https://media.istockphoto.com/photos/woman-hand-accepting-a-delivery-of-boxes-from-deliveryman-picture-id511661096?k=20&m=511661096&s=612x612&w=0&h=6MDIufkRKilREUM4qnZZFPMy5_x4eBsM3NGT7RWcImI="
+				alt="" style="border-radius: 5px;" >
+            </center>    
+                <br><br>
+			<div class="dis-flex m-3 justify-content-between p-2 ">
+				<h3 class="m-1 p-2 aboutUsh3" style="padding-left: 40px; padding-right: 40px;">The D-cube sports club “Day 1” mentality is our approach of doing everything with the
+					energy and entrepreneurial spirit of a new organisation on its first day.</h3>
+				<b>
+					<p class=" m-1 pt-2 pb-4 pl-2 pr-2 aboutUsPara" style="padding-left: 10px; padding-right: 40px;">Working to earn and keep our customers’ trust is the single
+						biggest driver of The Bhartiya Cart’s Day 1 approach. The Bhartiya Cart’s decision-making
+						process asks employees to consider whether an action is a one-way door—consequential and nearly
+						irreversible—or a two-way door, easy to change course and go back. Discover more about who we
+						are through our Annual Letters to Shareholders from 2003 through today.</p>
+				</b>
+			</div>
+			<div class="p-3">
+				<center>
+					<h2>Contact Us</h2>
+                    <br>
+                    <p><strong>Address:</strong>Sutex bank college,amroli,surat.</p>
+                    <p><strong>Phone:</strong> +10 2222 365/(+91) 01 2345 6789</p>
+                    <p><strong>Hours</strong> 10:00  - 18:00,Mon - sat</p>
+					<br>			
+                            <div class="copyright">
+                                <p>Copyright © 2023 Elegant Themes ®</p>
+                            </div>        
+				</center>
+                <br>
+			</div>
+		</div>
+	</main>
+
+</body>
+
+</html>

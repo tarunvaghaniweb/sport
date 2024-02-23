@@ -1,0 +1,63 @@
+[
+    {
+      "productId": 1,
+      "productBrand": "Nike",
+      "productName": "Nike Cricket Bat",
+      "productPrice": 9900 
+    },
+    {
+      "productId": 2,
+      "productBrand": "Adidas",
+      "productName": "Adidas Cricket Ball",
+      "productPrice": 400
+    },
+    {
+      "productId": 3,
+      "productBrand": "Gray-Nicolls",
+      "productName": "Gray-Nicolls Cricket Gloves",
+      "productPrice": 700
+    },
+    {
+        "productId": 4,
+        "productBrand": "Puma",
+        "productName": "Puma Cricket Helmet",
+        "productPrice": 1300
+      },
+      {
+        "productId": 5,
+        "productBrand": "Kookaburra",
+        "productName": "Kookaburra Cricket Shoes",
+        "productPrice": 4000
+      },
+      {
+        "productId": 6,
+        "productBrand": "SG",
+        "productName": "SG Cricket Pads",
+        "productPrice": 6000
+      },
+      {
+        "productId": 7,
+        "productBrand": "Spartan",
+        "productName": "Spartan Cricket Bag",
+        "productPrice": 500
+      },
+      {
+        "productId": 8,
+        "productBrand": "GM",
+        "productName": "GM Cricket Gloves",
+        "productPrice": 800
+      },
+      {
+        "productId": 9,
+        "productBrand": "SS",
+        "productName": "SS Cricket Bat",
+        "productPrice": 7000
+      },
+      {
+        "productId": 10,
+        "productBrand": "BAS Vampire",
+        "productName": "BAS Vampire Cricket Ball",
+        "productPrice": 550
+      }
+  ]
+  

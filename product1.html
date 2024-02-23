@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Products</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cricket Products</h1>
+    <button id="toggleButton" class="btn btn-primary">Toggle Records</button>
+    <table class="table" style="display:none;" id="productTable">
+      <thead>
+        <tr>
+          <th scope="col">Product ID</th>
+          <th scope="col">Brand</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody id="productTableBody">
+        <!-- Product data will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    let isTableVisible = false;
+
+    function toggleTableVisibility() {
+      const table = document.getElementById('productTable');
+      if (isTableVisible) {
+        table.style.display = 'none';
+      } else {
+        table.style.display = 'table';
+      }
+      isTableVisible = !isTableVisible;
+    }
+
+    document.getElementById('toggleButton').addEventListener('click', () => {
+      toggleTableVisibility();
+    });
+
+    // Fetch JSON data and populate the table
+    fetch('cricket.json')
+      .then(response => response.json())
+      .then(data => {
+        const tableBody = document.getElementById('productTableBody');
+        data.forEach(product => {
+          const row = `
+            <tr>
+              <td>${product.productId}</td>
+              <td>${product.productBrand}</td>
+              <td>${product.productName}</td>
+              <td>${product.productPrice.toFixed(2)} Rs.</td>
+            </tr>
+          `;
+          tableBody.innerHTML += row;
+        });
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
+</body>
+</html>
